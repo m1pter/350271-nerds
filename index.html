@@ -2,11 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс. Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="src=http://placehold.it/150x100" alt="Логотип Нёрдс">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="basket" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="slider">
+        <div class="slider-main container">
+          <div class="slides">
+            <div class="slide slide-first">
+              <h2 class="slide_title">Долго, дорого, скурпулезно.</h2>
+              <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+              <img src="src=http://placehold.it/150x100" alt="Долго, дорого, скурпулезно.">
+            </div>
+            <div class="slide slide-second">
+              <h2 class="slide_title">Любим математику как никто другой</h2>
+              <p>Никакого креатива, только математические формулы<br>
+                для расчета идеальных пропорций.</p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+              <img src="src=http://placehold.it/150x100" alt="Любим математику как никто другой">
+            </div>
+            <div class="slide slide-third">
+              <h2 class="slide_title">Только ночь, только хардкор</h2>
+              <p>Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="btn btn-red">Узнать больше</a>
+              <img src="src=http://placehold.it/150x100" alt="Только ночь, только хардкор">
+            </div>
+          </div>
+          <input type="radio" id="rb1" name="toggle" checked>
+          <input type="radio" id="rb2" name="toggle">
+          <input type="radio" id="rb3" name="toggle">
+          <div class="slider-controls">
+            <label for="rb1"></label>
+            <label for="rb2"></label>
+            <label for="rb3"></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="advantages">
+        <div class="advantage-first">
+          <img src="http://placehold.it/150x100" alt="Веб-сайты">
+          <h3 class="advantage-title">Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="btn btn-red">Заказать</a>
+        </div>
+        <div class="advantage-second">
+          <img src="http://placehold.it/150x100" alt="Приложения">
+          <h3 class="advantage-title">Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="btn btn-red">Заказать</a>
+        </div>
+        <div class="advantage-third">
+         <img src="http://placehold.it/150x100" alt="Презентации">
+         <h3 class="advantage-title">Презентации</h3>
+         <p>Вы даже не подозреваете насколько вы изумительны</p>
+         <a href="#" class="btn btn-red">Заказать</a>
+       </div>
+      </div>
+      <div class="index-content">
+        <div class="index-content-left">
+          <h1 class="index-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара</h1>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы
+          </p>
+          <div class="worklist">
+            <h2>Выполняем заказы на разработку:</h2>
+            <ul>
+              <li>
+                <p>Веб-сайтов любой сложности</p>
+              </li>
+              <li>
+                <p>Мобильных приложений для OS и Android</p>
+              </li>
+              <li>
+                <p>Слайдшоу и видео для корпоративных презентаций</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="index-content-right">
+          <div class="color-logo">
+           <img src="http://placehold.it/150x100" alt="Нёрдс - дизайн-студия">
+          </div>
+          <div class="table-accuracy">
+            <h2>С 2004 года любим точность во всем:</h2>
+            <table>
+              <tr>
+                <th>146%</th>
+                <th>100%</th>
+                <th>50%</th>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="partners">
+        <img src="http://placehold.it/150x100" alt="Логотип HTML-academy">
+        <img src="http://placehold.it/150x100" alt="Логотип Barbershop Borodinski">
+        <img src="http://placehold.it/150x100" alt="Логотип PINK">
+        <img src="http://placehold.it/150x100" alt="Логотип MISHKA">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <div class="map-container">
+          <img src="http://placehold.it/600x300" alt="Карта">
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts-container">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>Тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn btn-red">Напишите нам</a>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </div>
+      <div class="slogan">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
   </body>
 </html>
