@@ -5,65 +5,81 @@
     <title>Нёрдс. Каталог</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="src=http://placehold.it/150x100" alt="Логотип Нёрдс">
-          </a>
+    <header class="main-header container">
+      <nav class="main-navigation">
+        <a><img src="src=http://placehold.it/150x100" alt="Логотип Нёрдс"></a>
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-            <li>
-              <a class="basket" href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav>
-        <h1>Магазин готовых шаблонов</h1>
-      </div>
+      </nav>
     </header>
     <main class="container">
+      <p>Магазин готовых шаблонов</p>
       <aside class="sidebar">
-        <form action="#" method="post">
-          <h2 class="filter-title">Стоимость</h2>
+        <form action="#" method="get">
           <div class="range-filter">
-              <!--не знаю как сделать-->
+            <h2 class="filter-title">Стоимость</h2>
+              <!--не знаю пока как сделать-->
           </div>
-          <div class="network">
-            <h2 class="filter-title">Сетка:</h2>
-            <input type="radio" id="rb1" name="network" checked>
-            <label for="rb1">Адаптивная</label>
-            <input type="radio" id="rb2" name="network">
-            <label for="rb2">Фиксированная</label>
-            <input type="radio" id="rb3" name="network">
-            <label for="rb3">Резиновая</label>
+          <fieldset class="network">
+            <legend class="legend-network legend">Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="rb1" name="network" value="Слайдер" checked>
+                <label for="rb1">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" id="rb2" name="network" value="Фиксированная">
+                <label for="rb2">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" id="rb3" name="network" value="Резиновая">
+                <label for="rb3">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="features">
+            <legend class="legend-features legend">Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="ch1" name="slider" value="Слайдер" checked>
+                <label for="ch1">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch2" name="advantages" value="Блок преимуществ">
+                <label for="ch2">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch3" name="news" value="Новости" checked>
+                <label for="ch3">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch4" name="gallery" value="Галерея">
+                <label for="ch4">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch5" name="recycle" value="Корзина">
+                <label for="ch5">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="show">
+            <a href="#">Показать</a>
           </div>
-          <div class="features">
-            <h2 class="filter-title">Особенности:</h2>
-            <input type="checkbox" id="ch1" name="slider" checked>
-            <label for="ch1">Слайдер</label>
-            <input type="checkbox" id="ch2" name="advantages">
-            <label for="ch2">Блок преимуществ</label>
-            <input type="checkbox" id="ch3" name="news" checked>
-            <label for="ch3">Новости</label>
-            <input type="checkbox" id="ch4" name="gallery">
-            <label for="ch4">Галерея</label>
-            <input type="checkbox" id="ch5" name="recycle">
-            <label for="ch5">Корзина</label>
-          </div>
-          <button type="submit" name="button" class="btn btn-filter">Показать</button>
         </form>
       </aside>
       <div class="main-catalog">
@@ -89,97 +105,89 @@
            </ul>
          </div>
          <div class="products">
-           <div class="sedona item">
+
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="Sedona">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>SEDONA</p>
-               </div>
-               <div class="item-description">
-                 <p>Информационный сайт для туристов</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">SEDONA</p>
+               <p class="item-description">Информационный сайт для туристов</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
 
-           <div class="pink item">
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="Pink App">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>PINK APP</p>
-               </div>
-               <div class="item-description">
-                 <p>Продуктовый лэндинг<br>
-                 приложения для iOS и Android</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">PINK APP</p>
+               <p class="item-description">Продуктовый лэндинг<br>
+               приложения для iOS и Android</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
 
-           <div class="barbershop item">
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="Barbershop">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>BARBERSHOP</p>
-               </div>
-               <div class="item-description">
-                 <p>Сайт салона красоты<br>
-                 Для мужчин, да.</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">BARBERSHOP</p>
+               <p class="item-description">Сайт салона красоты<br>
+               Для мужчин, да.</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
 
-           <div class="mishka item">
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="Mishka">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>MISHKA</p>
-               </div>
-               <div class="item-description">
-                 <p>Интернет-магазин вязанных игрушек</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">MISHKA</p>
+               <p class="item-description">Интернет-магазин вязанных игрушек</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
 
-           <div class="aplus item">
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="A Plus">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>A PLUS</p>
-               </div>
-               <div class="item-description">
-                 <p>Лендинг курсов повышения квалификации</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">A PLUS</p>
+               <p class="item-description">Лендинг курсов повышения квалификации</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
 
-           <div class="kvast item">
+           <div class="item">
              <img src="http://placehold.it/360x615" alt="Kvast">
-             <div class"item-info">
-               <div class="item-name">
-                 <p>KBACT</p>
-               </div>
-               <div class="item-description">
-                 <p>Промо-сайт производителя крафтового кваса</p>
-               </div>
+             <div class="item-info">
+               <p class="item-name">KBACT</p>
+               <p class="item-description">Промо-сайт производителя крафтового кваса</p>
                <a href="#" class="btn btn-red">9 900 РУБ.</a>
              </div>
            </div>
+
          </div>
        </div>
-    </main>
-    <footer class="main-footer">
+       <div class="pagenation">
+         <ul>
+           <li class="current">
+             <a href="#">1</a>
+           </li>
+           <li>
+             <a href="#">2</a>
+           </li>
+           <li>
+             <a href="#">3</a>
+           </li>
+           <li>
+             <a href="#">Следующая</a>
+           </li>
+         </ul>
+       </div>
+     </main>
+   <footer class="main-footer container">
       <div class="map">
-        <div class="map-container">
+        <div class="map-img">
           <img src="http://placehold.it/600x300" alt="Карта">
         </div>
-      </div>
-      <div class="contacts">
-        <div class="contacts-container">
-          <h2>NЁRDS DESIGN STUDIO</h2>
+        <div class="contacts">
+          <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>Тел. +7 (812) 275-75-75</p>
           <a href="#" class="btn btn-red">Напишите нам</a>
