@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Нёрдс. Главная</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>Nerds</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <a><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
-        <ul>
+        <a><img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
+        <ul class="menu">
           <li>
             <a href="#">Студия</a>
           </li>
@@ -28,64 +29,57 @@
         </div>
       </nav>
       <div class="slider">
-        <div class="slider-main">
-          <div class="slides">
-            <div class="slide-first">
-              <h2 class="slide_title">Долго, дорого, скурпулезно.</h2>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
               <p>Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
-              <a href="#" class="btn btn-red">Узнать больше</a>
-              <img src="img/slide1.png" width="698" height="413" alt="Долго, дорого, скурпулезно.">
-            </div>
-            <div class="slide-second">
-              <h2 class="slide_title">Любим математику как никто другой</h2>
-              <p>Никакого креатива, только математические формулы<br>
-                для расчета идеальных пропорций.</p>
-              <a href="#" class="btn btn-red">Узнать больше</a>
-              <img src="img/slide2.png" width="663" height="430" alt="Любим математику как никто другой">
-            </div>
-            <div class="slide-third">
-              <h2 class="slide_title">Только ночь, только хардкор</h2>
-              <p>Работать днем, как все? Мы против этого.<br>
-              Ближе к полуночи работа только начинается.</p>
-              <a href="#" class="btn btn-red">Узнать больше</a>
-              <img src="img/slide3.png" width="759" height="411" alt="Только ночь, только хардкор">
+              <a class="btn" href="#">Узнать больше</a>
             </div>
           </div>
-          <div class="slider-controls">
-            <ul>
-              <li>
-                <input type="radio" id="rb1" name="toggle" checked>
-                <label for="rb1"></label>
-              </li>
-              <li>
-                <input type="radio" id="rb2" name="toggle">
-                <label for="rb2"></label>
-              </li>
-              <li>
-                <input type="radio" id="rb3" name="toggle">
-                <label for="rb3"></label>
-              </li>
-            </ul>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любим математику как никто другой</div>
+              <p>Никакого креатива, только математические формулы<br>
+                для расчета идеальных пропорций.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только ночь,<br>только хардкор</div>
+              <p>Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main class="container">
       <div class="advantages">
-        <div class="advantage-first">
+        <div class="advantage-item">
           <img src="img/advantage1.png" width="300" height="146" alt="Веб-сайты">
           <h2 class="advantage-title">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#" class="btn btn-red">Заказать</a>
         </div>
-        <div class="advantage-second">
+        <div class="advantage-item">
           <img src="img/advantage2.png" width="300" height="146" alt="Приложения">
           <h2 class="advantage-title">Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#" class="btn btn-red">Заказать</a>
         </div>
-        <div class="advantage-third">
+        <div class="advantage-item">
          <img src="img/advantage3.png" width="300" height="146" alt="Презентации">
          <h2 class="advantage-title">Презентации</h2>
          <p>Вы даже не подозреваете насколько вы изумительны</p>
@@ -140,11 +134,12 @@
         <img src="img/logo4.png" width="173" height="84" alt="Логотип MISHKA">
       </div>
     </main>
-    <footer class="main-footer container">
-      <div class="map">
-        <div class="map-img">
+    <footer class="main-footer">
+
+        <!--<div class="map-img">
           <img src="img/map.jpg" width="1440" height="785" alt="Карта">
-        </div>
+        </div>-->
+      <div class="map">
         <div class="contacts">
           <p class="contacts-title">Nёrds design studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -152,7 +147,7 @@
           <a href="#" class="btn btn-red">Напишите нам</a>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom  container">
         <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>

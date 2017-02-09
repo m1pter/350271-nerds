@@ -1,3 +1,8 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -7,12 +12,6 @@ body {
 }
 
 h1 {
-  font-size: 55px;
-  line-height: 55px;
-}
-
-
-.slide_title {
   font-size: 55px;
   line-height: 55px;
 }
@@ -33,4 +32,237 @@ h1 {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header {
+  margin-top: 50px;
+  background:#eeeeee;
+  margin-bottom: 80px;
+}
+
+.main-navigation {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: #E0FFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index-logo {
+  background-color: #FFB6C1;
+  margin-right: 200px; /* не нужен, т.к. space-between */
+  width: 160px;
+  height: 65px;
+}
+
+.user-block {
+  text-align: right;
+  background-color: #FFB6C1;
+  margin-left: 200px; /* не нужен, т.к. space-between */
+  width: 160px;
+  justify-content: flex-end;
+}
+
+.menu {
+  background-color: #FFB6C1;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------------------------слайдер-------------------------*/
+.slider{
+    position:relative;
+    width:1160px;
+    height:430px;
+    margin:0 auto;
+}
+
+.slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+
+.slider-controls{
+    position:absolute;
+    bottom:105px;
+    left:50%;
+    width:200px;
+    height:18px;
+    margin-left:-100px;
+    text-align:center;
+    z-index:1000;
+}
+
+.slider-controls label{
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+    margin:0 17px;
+    background:white;
+    border:5px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background:#c1c1c1; /* не пойму пока как кругом в круге сделать*/
+}
+
+.slide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-color:rgba(255,255,0,0.1);
+}
+
+.slide-text{
+    width:560px;
+    padding:30px 0;
+    color:#283136;
+}
+.slide-title{
+    font-size:55px;
+    line-height:1;
+    font-weight:bold;
+    color:black;
+}
+
+.slide .btn{
+    display:block;
+    width:240px;
+    padding:10px 0;
+    margin-top:40px;
+    font-size:16px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:#fb565a;
+    border-radius:2px;
+}
+
+.slide:nth-child(1){
+    background-image:url('../img/slider-bg.png');
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+
+.slide:nth-child(2){
+    background-image:url('../img/slider-bg-2.png');
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+
+.slide:nth-child(3){
+    background-image:url('../img/slider-bg-3.png');
+    background-repeat:no-repeat;
+    background-position:100% 0;
+}
+
+.slide{
+    display:none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+/*конец слайдера*/
+
+.advantages {
+  background-color: #E0FFFF;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.advantage-item {
+  width: 300px;
+}
+
+.index-content {
+  background-color: #FFB6C1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.index-content-left {
+  background-color: #E0FFFF;
+  width: 660px;
+}
+
+.index-content-right {
+  background-color: #E0FFFF;
+  width: 360px;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 176px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.map {
+  width: 100%;
+  height: 415px;
+  margin-bottom: 70px;
+  background-image:url('../img/map.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+
+}
+
+.contacts {
+  width: 320px;
+  height: 310px;
+  background-color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.slogan {
+  background-color: #FFB6C1;
+  width: 560px;
+  margin-right: 200px;
+  margin-left: 140px;
+}
+
+.social-btn {
+  background-color: #FFB6C1;
 }
