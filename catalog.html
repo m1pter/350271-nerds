@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header container">
-      <nav class="main-navigation">
-        <a><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
-        <ul>
+    <header class="catalog-header">
+      <nav class="main-navigation container">
+        <a><img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
+        <ul class="menu">
           <li>
             <a href="#">Студия</a>
           </li>
@@ -28,9 +28,9 @@
           <a class="basket" href="#">Корзина</a>
         </div>
       </nav>
+      <h1>Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
       <div class="catalog">
         <aside class="sidebar">
           <form action="#" method="get">
@@ -85,9 +85,9 @@
         </aside>
         <div class="main-catalog">
            <div class="sorting">
-             <div class="sorting_title">Сортировать:
+             <div class="sorting-title">Сортировать:
              </div>
-             <ul class="sorting_filter">
+             <ul class="sorting-filter">
                <li class="active">
                  <a href="#" class="active">По цене</a>
                </li>
@@ -108,7 +108,8 @@
            <div class="products">
 
              <div class="item">
-               <img src="img/img-sedona.jpg" width="360" height="616" alt="Sedona">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
                <div class="item-info">
                  <p class="item-name">Sedona</p>
                  <p class="item-description">Информационный сайт для туристов</p>
@@ -117,7 +118,8 @@
              </div>
 
              <div class="item">
-               <img src="img/img-pink.jpg" width="360" height="616" alt="Pink App">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-pink.png" width="360" height="576" alt="Pink App">
                <div class="item-info">
                  <p class="item-name">Pink app</p>
                  <p class="item-description">Продуктовый лэндинг<br>
@@ -127,7 +129,8 @@
              </div>
 
              <div class="item">
-               <img src="img/img-barbershop.jpg" width="360" height="616" alt="Barbershop">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-barbershop.png" width="360" height="576" alt="Barbershop">
                <div class="item-info">
                  <p class="item-name">Barbershop</p>
                  <p class="item-description">Сайт салона красоты<br>
@@ -137,7 +140,8 @@
              </div>
 
              <div class="item">
-               <img src="img/img-mishka.jpg" width="360" height="616" alt="Mishka">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-mishka.png" width="360" height="576" alt="Mishka">
                <div class="item-info">
                  <p class="item-name">Mishka</p>
                  <p class="item-description">Интернет-магазин вязанных игрушек</p>
@@ -146,7 +150,8 @@
              </div>
 
              <div class="item">
-               <img src="img/img-aplus.jpg" width="360" height="616" alt="A Plus">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-aplus.png" width="360" height="576" alt="A Plus">
                <div class="item-info">
                  <p class="item-name">A plus</p>
                  <p class="item-description">Лендинг курсов повышения квалификации</p>
@@ -155,7 +160,8 @@
              </div>
 
              <div class="item">
-               <img src="img/img-kvast.jpg" width="360" height="616" alt="Кваст">
+               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img src="img/img-kvast.png" width="360" height="576" alt="Кваст">
                <div class="item-info">
                  <p class="item-name">Кваст</p>
                  <p class="item-description">Промо-сайт производителя крафтового кваса</p>
@@ -164,30 +170,32 @@
              </div>
 
            </div>
-         </div>
-         <div class="pagenation">
-           <ul>
-             <li class="current">
-               <a href="#">1</a>
-             </li>
-             <li>
-               <a href="#">2</a>
-             </li>
-             <li>
-               <a href="#">3</a>
-             </li>
-             <li>
-               <a href="#">Следующая</a>
-             </li>
-           </ul>
+
+           <div class="pagenation">
+             <ul>
+               <li class="current">
+                 <a href="#">1</a>
+               </li>
+               <li>
+                 <a href="#">2</a>
+               </li>
+               <li>
+                 <a href="#">3</a>
+               </li>
+               <li>
+                 <a href="#">Следующая</a>
+               </li>
+             </ul>
+           </div>
          </div>
        </div>
      </main>
-     <footer class="main-footer container">
-       <div class="map">
-         <div class="map-img">
+     <footer class="main-footer">
+
+         <!--<div class="map-img">
            <img src="img/map.jpg" width="1440" height="785" alt="Карта">
-         </div>
+         </div>-->
+       <div class="map">
          <div class="contacts">
            <p class="contacts-title">Nёrds design studio</p>
            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -195,7 +203,7 @@
            <a href="#" class="btn btn-red">Напишите нам</a>
          </div>
        </div>
-       <div class="footer-bottom">
+       <div class="footer-bottom  container">
          <div class="footer-social">
            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
