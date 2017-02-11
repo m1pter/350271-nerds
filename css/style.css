@@ -241,7 +241,8 @@ h1 {
 .map {
   width: 100%;
   height: 415px;
-  margin-bottom: 70px;
+  margin-top: 170px;
+  margin-bottom: 80px;
   background-image:url('../img/map.jpg');
   background-repeat:no-repeat;
   background-position: center center;
@@ -329,22 +330,26 @@ aside {
   width: 360px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
 }
 
-.pagenation ul{
+.pagenation {
+  margin-top: 60px;
+  position: relative;
+}
+
+.pagenation ul {
+  position: absolute;
+  left: -50px;
+}
+
+.pagenation ul {
   background-color: #FFB6C1;
   width: 760px;
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
 }
-
-/*.pagenation li:first-child {
-  position: relative;;
-  top: 0;
-  left: 0;
-}  пытаюсь прижать влево*/
 
 .pagenation a {
   text-decoration: none;
@@ -355,8 +360,9 @@ aside {
 }
 
 .pagenation li{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 18px;
+  padding: 16px 10px;
   margin:0 10px;
   text-align: center;
   background: #eeeeee;
@@ -365,10 +371,86 @@ aside {
   border-radius: 2px;
 }
 
+
 ul .current {
   background: white;
 }
 
 .pagenation li:last-child {
   width: 260px;
+}
+
+/*  range-filter  */
+.range-filter {
+  width: 260px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 21px;
+  padding-left: 28px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background: #eeeeee;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cccdcd;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+}
+
+.price-controls label {
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 12px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 2px;
+  background: #eeeeee;
 }

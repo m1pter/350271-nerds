@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс. Каталог</title>
+    <!--
+<link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+   -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -33,10 +36,20 @@
     <main class="container">
       <div class="catalog">
         <aside class="sidebar">
-          <form action="#" method="get">
+          <form action="form.php" method="get">
             <div class="range-filter">
               <h2 class="filter-title">Стоимость</h2>
-                <!--не знаю пока как сделать-->
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до   <input name="max-price" type="text" value="15 000"></label>
+              </div>
             </div>
             <fieldset class="network">
               <legend class="legend-network legend">Сетка:</legend>
