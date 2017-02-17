@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс. Каталог</title>
-    <!--
-<link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-   -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="catalog-header">
       <nav class="main-navigation container">
-        <a><img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
+        <a href="index.html"><img class="index-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс"></a>
         <ul class="menu">
           <li>
             <a href="#">Студия</a>
@@ -20,7 +18,7 @@
           <li>
             <a href="#">Клиенты</a>
           </li>
-          <li>
+          <li class="actived">
             <a href="#">Магазин</a>
           </li>
           <li>
@@ -36,9 +34,9 @@
     <main class="container">
       <div class="catalog">
         <aside class="sidebar">
-          <form action="form.php" method="get">
+          <form class="sidebar-form" action="form.php" method="get">
             <div class="range-filter">
-              <h2 class="filter-title">Стоимость</h2>
+              <h2 class="filter-title">Стоимость:</h2>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="margin-left: 0%; width: 70%"></div>
@@ -56,15 +54,15 @@
               <ul>
                 <li>
                   <input type="radio" id="rb1" name="network" value="Слайдер" checked>
-                  <label for="rb1">Адаптивная</label>
+                  <label class="radio" for="rb1">Адаптивная</label>
                 </li>
                 <li>
                   <input type="radio" id="rb2" name="network" value="Фиксированная">
-                  <label for="rb2">Фиксированная</label>
+                  <label class="radio" for="rb2">Фиксированная</label>
                 </li>
                 <li>
                   <input type="radio" id="rb3" name="network" value="Резиновая">
-                  <label for="rb3">Резиновая</label>
+                  <label class="radio" for="rb3">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -73,112 +71,116 @@
               <ul>
                 <li>
                   <input type="checkbox" id="ch1" name="slider" value="Слайдер" checked>
-                  <label for="ch1">Слайдер</label>
+                  <label class="feature-checkbox" for="ch1">Слайдер</label>
                 </li>
                 <li>
                   <input type="checkbox" id="ch2" name="advantages" value="Блок преимуществ">
-                  <label for="ch2">Блок преимуществ</label>
+                  <label class="feature-checkbox" for="ch2">Блок преимуществ</label>
                 </li>
                 <li>
                   <input type="checkbox" id="ch3" name="news" value="Новости" checked>
-                  <label for="ch3">Новости</label>
+                  <label class="feature-checkbox"  for="ch3">Новости</label>
                 </li>
                 <li>
                   <input type="checkbox" id="ch4" name="gallery" value="Галерея">
-                  <label for="ch4">Галерея</label>
+                  <label class="feature-checkbox" for="ch4">Галерея</label>
                 </li>
                 <li>
                   <input type="checkbox" id="ch5" name="recycle" value="Корзина">
-                  <label for="ch5">Корзина</label>
+                  <label class="feature-checkbox" for="ch5">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <a href="#">Показать</a>
+            <a class="btn btn-form" href="#">Показать</a>
           </form>
         </aside>
         <div class="main-catalog">
            <div class="sorting">
              <div class="sorting-title">Сортировать:
              </div>
-             <ul class="sorting-filter">
-               <li class="active">
-                 <a href="#" class="active">По цене</a>
-               </li>
-               <li>
-                 <a href="#">По типу</a>
-               </li>
-               <li>
-                 <a href="#">По названию</a>
-               </li>
-               <li class="symbol-point">
-                 <a href="#" class="symbol-link active">up</a>
-               </li>
-               <li class="symbol-point">
-                 <a href="#" class="symbol-link">down</a>
-               </li>
-             </ul>
+             <div class="sorting-filter">
+               <ul class="main-sorting">
+                 <li>
+                   <a href="#" class="actived">По цене</a>
+                 </li>
+                 <li>
+                   <a href="#">По типу</a>
+                 </li>
+                 <li>
+                   <a href="#">По названию</a>
+                 </li>
+               </ul>
+               <ul class="symbol-point">
+                 <li>
+                   <a href="#" class="actived">&#9660;</a>
+                 </li>
+                 <li>
+                   <a href="#">&#9650;</a>
+                 </li>
+               </ul>
+             </div>
            </div>
            <div class="products">
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
                <div class="item-info">
-                 <p class="item-name">Sedona</p>
-                 <p class="item-description">Информационный сайт для туристов</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <h2>Sedona</h2>
+                 <p class="item-description">Информационный сайт<br>для туристов</p>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-pink.png" width="360" height="576" alt="Pink App">
                <div class="item-info">
-                 <p class="item-name">Pink app</p>
+                 <h2>Pink app</h2>
                  <p class="item-description">Продуктовый лэндинг<br>
                  приложения для iOS и Android</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-barbershop.png" width="360" height="576" alt="Barbershop">
                <div class="item-info">
-                 <p class="item-name">Barbershop</p>
-                 <p class="item-description">Сайт салона красоты<br>
+                 <h2>Barbershop</h2>
+                 <p class="item-description">Сайт салона красоты.<br>
                  Для мужчин, да.</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-mishka.png" width="360" height="576" alt="Mishka">
                <div class="item-info">
-                 <p class="item-name">Mishka</p>
-                 <p class="item-description">Интернет-магазин вязанных игрушек</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <h2>Mishka</h2>
+                 <p class="item-description">Интернет-магазин<br>вязанных игрушек</p>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-aplus.png" width="360" height="576" alt="A Plus">
                <div class="item-info">
-                 <p class="item-name">A plus</p>
+                 <h2>A plus</h2>
                  <p class="item-description">Лендинг курсов повышения квалификации</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
              <div class="item">
-               <img src="img/hat.png" width="360" height="40" alt="Hat">
+               <img class="hat" src="img/hat.png" width="360" height="40" alt="Hat-item">
                <img src="img/img-kvast.png" width="360" height="576" alt="Кваст">
                <div class="item-info">
-                 <p class="item-name">Кваст</p>
+                 <h2>Кваст</h2>
                  <p class="item-description">Промо-сайт производителя крафтового кваса</p>
-                 <a href="#" class="btn btn-red">9 900 РУБ.</a>
+                 <a href="#" class="btn btn-red">9 900 руб.</a>
                </div>
              </div>
 
@@ -187,7 +189,7 @@
            <div class="pagenation">
              <ul>
                <li class="current">
-                 <a href="#">1</a>
+                 <span>1</span>
                </li>
                <li>
                  <a href="#">2</a>
@@ -206,8 +208,8 @@
      <footer class="main-footer container">
        <div class="map"></div>
        <div class="contacts">
-         <p class="contacts-title">Nёrds design studio</p>
-         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+         <h2>Nёrds design studio</h2>
+         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
          <p>Тел. +7 (812) 275-75-75</p>
          <a href="#" class="btn btn-red">Напишите нам</a>
        </div>
