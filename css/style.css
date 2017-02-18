@@ -463,6 +463,9 @@ body {
   width: 560px;
   margin-right: 200px;
   margin-left: 140px;
+}
+
+.slogan b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -704,32 +707,44 @@ body {
   padding: 0;
 }
 
-.pagenation a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
-.pagenation li{
-  width: 30px;
-  height: 24px;
-  padding: 13px 10px;
+.pagenation li {
   margin:0 10px;
-  text-align: center;
+  display:flex;
+  width: 50px;
+  height: 50px;
+  font-size:16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform:uppercase;
+  text-decoration:none;
+  align-items: center;
+  justify-content: center;
   background: #eeeeee;
-  vertical-align:top;
   border-radius: 2px;
 }
 
-.pagenation li:hover {
+  .pagenation a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+
+  }
+
+.pagenation a:hover {
   background: #dfdfdf;
 }
 
 
-.pagenation li:active {
-  font-size: 16px;
+.pagenation a:active {
   color: #959595;
   background: #d5d5d5;
   box-shadow: inset 0 3px 0 #bfbfbf;
@@ -739,22 +754,19 @@ body {
 .pagenation .current:hover,
 .pagenation .current:active{
   text-decoration: none;
-  font-size: 16px;
   color: #000000;
   text-transform: uppercase;
   font-weight: bold;
-
   background: white;
   border:3px solid #dbdbdb;
-  width: 24px;
-  height: 24px;
-  padding: 10px 10px;
+  height: 44px;
+  width: 44px;
   box-shadow: none;
   opacity: 1;
 }
 
 
-li:active a{
+a:active{
   opacity: 0.3;
 }
 
@@ -858,56 +870,65 @@ li:active a{
 }
 
 .slide .btn {
-    display:block;
-    width:240px;
-    padding:10px 0;
     margin-top:40px;
+    display:flex;
+    width:240px;
+    height: 50px;
     font-size:16px;
+    line-height: 18px;
     color:white;
+    font-weight: 500;
     text-transform:uppercase;
-    text-align:center;
     text-decoration:none;
+    align-items: center;
+    justify-content: center;
     background:#fb565a;
     border-radius:2px;
 }
 
 .advantages .btn {
-  display:block;
-  width:160px;
-  height: 24px;
   margin-top: 35px;
-  padding: 13px 0;
+  display:flex;
+  width:160px;
+  height: 50px;
   font-size:16px;
+  line-height: 18px;
   color:white;
+  font-weight: 500;
   text-transform:uppercase;
-  text-align:center;
   text-decoration:none;
+  align-items: center;
+  justify-content: center;
   border-radius:2px;
 }
 
 .contacts .btn {
   margin-top: 35px;
-  display:block;
+  display:flex;
   width:220px;
-  height: 24px;
-  padding: 13px 0;
+  height: 50px;
   font-size:16px;
+  line-height: 18px;
   color:white;
+  font-weight: 500;
   text-transform:uppercase;
-  text-align:center;
   text-decoration:none;
+  align-items: center;
+  justify-content: center;
   border-radius:2px;
 }
 
 .btn-form {
-  display:block;
+  display:flex;
   width:260px;
-  padding:10px 0;
-  height: 30px;
+  height: 50px;
   font-size:16px;
+  line-height: 18px;
   color: #000000;
+  font-weight: 500;
   text-transform:uppercase;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   text-decoration:none;
   border-radius:2px;
   background-color: #eeeeee;
@@ -1029,6 +1050,7 @@ li:active a{
   width: 360px;
   display: none;
   position: absolute;
+  left: 0;
   bottom: 0;
   background-color: #eeeeee;
 }
@@ -1059,17 +1081,23 @@ li:active a{
 }
 
 .item .btn {
-  display:block;
-  width:200px;
-  height: 24px;
-  padding: 13px 0;
   margin: 30px 80px 42px 80px;
+  display:flex;
+  width:200px;
+  height: 50px;
   font-size:16px;
+  line-height: 18px;
   color:white;
+  font-weight: 500;
   text-transform:uppercase;
-  text-align: center;
   text-decoration:none;
+  align-items: center;
+  justify-content: center;
   border-radius:2px;
+}
+
+.item .btn:active {
+  opacity: 1;
 }
 
 .item .hat {
