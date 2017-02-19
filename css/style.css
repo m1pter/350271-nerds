@@ -1159,6 +1159,10 @@ a:active{
   display:block;
 }
 
+.item-info a {
+text-decoration:none;
+}
+
 .item-info h2 {
   margin-top: 35px;
   text-align: center;
@@ -1178,6 +1182,11 @@ a:active{
   width: 240px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.item-description {
+  max-height: 50px;
+  overflow: hidden;
 }
 
 .item .btn {

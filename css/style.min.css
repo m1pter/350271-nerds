@@ -953,7 +953,6 @@ body {
     margin: 30px 80px 42px;
     height: 50px;
     text-transform: uppercase;
-    text-decoration: none;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1024,6 +1023,10 @@ body {
     display: block
 }
 
+.item .btn,.item-info a,.sorting a {
+    text-decoration: none
+}
+
 .item-info h2 {
     margin-top: 35px;
     text-align: center;
@@ -1041,6 +1044,11 @@ body {
     width: 240px;
     margin-left: auto;
     margin-right: auto
+}
+
+.item-description {
+    max-height: 50px;
+    overflow: hidden
 }
 
 .item .btn:active,.item:hover .hat {
@@ -1101,7 +1109,6 @@ body {
 
 .sorting a {
     color: #000;
-    text-decoration: none;
     opacity: .3
 }
 
