@@ -1131,11 +1131,12 @@ body {
 }
 
 .modal-content {
-    position: absolute;
-    top: 1706px;
+    position: fixed;
+    top: 50%;
     left: 50%;
     width: 760px;
     margin-left: -480px;
+    margin-top: -295px;
     z-index: 20;
     padding: 0 100px;
     box-shadow: 0 20px 40px rgba(0,0,0,.75);
