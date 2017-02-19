@@ -1237,10 +1237,17 @@ a:active{
   display: flex;
   margin-top: 8px;
   width: 341px;
-  height: 44px;
-  padding-left: 15px;
+  height: 46px;
+  padding: 0 0 0 15px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 400;
+  opacity: 0.5;
+
 }
 
 .modal-content textarea {
@@ -1252,6 +1259,12 @@ a:active{
   border: 2px solid #d7dcde;
   border-radius: 2px;
   padding-top: 15px;
+  outline: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 .btn-modal {
@@ -1324,11 +1337,13 @@ a:active{
 .modal-content input:hover, .modal-content textarea:hover {
   border-color: #b4b9bb;
   outline-color: #b4b9bb;
+  opacity: 0.5;
 }
 
 .modal-content input:focus, .modal-content textarea:focus {
   border-color: #000000;
   outline-color: #000000;
+  opacity: 1;
 }
 
 .modal-overlay {
