@@ -86,9 +86,15 @@ body {
   color: #000000;
   text-transform: uppercase;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-navigation a {
@@ -100,7 +106,9 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-navigation li{
@@ -153,8 +161,11 @@ body {
   padding-top: 12px;
   border-bottom: 2px solid inherit;
   padding-left: 80px;
-  justify-content: flex-end;
-  align-content: middle;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: middle;
+      align-content: middle;
 }
 
 .user-block::before {
@@ -172,8 +183,12 @@ body {
 
 .menu {
   width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*--------------------------------слайдер-------------------------*/
@@ -296,8 +311,12 @@ body {
 /*конец слайдера*/
 
 .advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 78px;
   margin-bottom: 75px;
   margin-top: 80px;
@@ -309,15 +328,22 @@ body {
 }
 
 .index-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 60px;
 }
 
 .index-content-left {
   width: 660px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .index-content-left b {
@@ -409,9 +435,15 @@ body {
 }
 
 .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
   height: 176px;
   border-top: 2px solid #eeeeee;
@@ -420,8 +452,11 @@ body {
 
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 70px;
 }
 
@@ -449,14 +484,22 @@ body {
 }
 
 .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 264px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .slogan {
@@ -500,8 +543,12 @@ body {
 
 .catalog {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sidebar {
@@ -511,8 +558,11 @@ body {
 
 .main-catalog {
   width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filter-title {
@@ -688,9 +738,14 @@ body {
 
 /*--------------------------------------------------*/
 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pagenation {
@@ -700,8 +755,12 @@ body {
 
 .pagenation ul {
   width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -710,6 +769,8 @@ body {
 
 .pagenation li {
   margin:0 10px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width: 50px;
   height: 50px;
@@ -718,8 +779,12 @@ body {
   font-weight: 500;
   text-transform:uppercase;
   text-decoration:none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #eeeeee;
   border-radius: 2px;
 }
@@ -731,9 +796,15 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: inherit;
     height: inherit;
 
@@ -829,6 +900,8 @@ a:active{
 }
 
 .price-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -871,6 +944,8 @@ a:active{
 
 .slide .btn {
     margin-top:40px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     width:240px;
     height: 50px;
@@ -880,14 +955,20 @@ a:active{
     font-weight: 500;
     text-transform:uppercase;
     text-decoration:none;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background:#fb565a;
     border-radius:2px;
 }
 
 .advantages .btn {
   margin-top: 35px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width:160px;
   height: 50px;
@@ -897,13 +978,19 @@ a:active{
   font-weight: 500;
   text-transform:uppercase;
   text-decoration:none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius:2px;
 }
 
 .contacts .btn {
   margin-top: 35px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width:220px;
   height: 50px;
@@ -913,12 +1000,18 @@ a:active{
   font-weight: 500;
   text-transform:uppercase;
   text-decoration:none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius:2px;
 }
 
 .btn-form {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width:260px;
   height: 50px;
@@ -927,8 +1020,12 @@ a:active{
   color: #000000;
   font-weight: 500;
   text-transform:uppercase;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration:none;
   border-radius:2px;
   background-color: #eeeeee;
@@ -1040,8 +1137,11 @@ a:active{
 .item {
   position: relative;
   width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 38px;
 }
 
@@ -1082,6 +1182,8 @@ a:active{
 
 .item .btn {
   margin: 30px 80px 42px 80px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width:200px;
   height: 50px;
@@ -1091,8 +1193,12 @@ a:active{
   font-weight: 500;
   text-transform:uppercase;
   text-decoration:none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius:2px;
 }
 
@@ -1116,10 +1222,16 @@ a:active{
 
 .sorting {
   width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
-  align-items: baseline;
-  justify-content: flex-start;;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;;
 
 }
 
@@ -1137,8 +1249,12 @@ a:active{
 
 .sorting-filter {
   width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -1156,7 +1272,9 @@ a:active{
   margin: 0;
   padding: 0;
   list-style: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sorting a:hover {
@@ -1171,14 +1289,22 @@ a:active{
 
 .main-sorting {
   width: 272px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .symbol-point {
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 
@@ -1210,15 +1336,25 @@ a:active{
 }
 
 .personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .modal-content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 360px;
   font-size: 16px;
   line-height: 18px;
@@ -1234,6 +1370,8 @@ a:active{
 }
 
 .modal-content input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
   width: 341px;
@@ -1251,6 +1389,8 @@ a:active{
 }
 
 .modal-content textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 8px;
   width: 736px;
@@ -1268,6 +1408,8 @@ a:active{
 }
 
 .btn-modal {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   width:260px;
   height: 50px;
@@ -1278,8 +1420,12 @@ a:active{
   background-color: #fb565a;
   text-transform:uppercase;
   text-decoration:none;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius:2px;
   margin-top: 50px;
   margin-bottom: 85px;
@@ -1363,24 +1509,48 @@ a:active{
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .overlay-show {
   display: block;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
