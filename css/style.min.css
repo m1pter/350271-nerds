@@ -54,33 +54,28 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px
 }
 
 .main-header {
+    padding-top: 50px;
     background: #eee
 }
 
-.catalog-header,.main-header {
-    padding-top: 50px;
-    color: #000;
+.catalog-header,.main-header,.main-navigation {
     font-size: 16px;
-    line-height: 30px
+    line-height: 30px;
+    color: #000
 }
 
-.main-navigation,.main-navigation ul {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+.catalog-header {
+    padding-top: 50px
 }
 
 .main-navigation {
     font-family: "Roboto","Arial",sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    color: #000;
     text-transform: uppercase;
     font-weight: 700;
     display: -webkit-box;
@@ -96,6 +91,12 @@ body {
     text-decoration: none
 }
 
+.main-navigation,.main-navigation li,.main-navigation ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .main-navigation ul {
     margin: 0;
     padding: 0;
@@ -103,23 +104,34 @@ body {
 }
 
 .main-navigation li {
-    height: 41px;
-    padding-top: 12px;
-    border-bottom: 2px solid inherit
+    height: 50px;
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .main-navigation a:hover {
     color: #fb565a
 }
 
-.main-navigation a:active,.user-block::before {
+.main-navigation a:active {
     color: #000;
     opacity: .3
 }
 
-.main-navigation .actived {
-    height: 41px;
-    border-bottom: 2px solid red
+.active-page {
+    position: relative
+}
+
+.active-page::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: #fb565a
 }
 
 .catalog-header .main-navigation {
@@ -142,20 +154,22 @@ body {
     opacity: .3
 }
 
+.menu,.user-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
 .user-block {
     position: relative;
-    text-align: right;
     margin-left: 200px;
-    width: 80px;
-    height: 41px;
-    padding-top: 12px;
-    border-bottom: 2px solid inherit;
+    margin-top: 15px;
+    height: 50px;
     padding-left: 80px;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-line-pack: middle;
-    align-content: middle
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 80px
 }
 
 .user-block::before {
@@ -165,15 +179,14 @@ body {
     left: 45px;
     width: 23px;
     height: 23px;
+    color: #000;
+    opacity: .3;
     background: #eee url(../img/sprite.png) no-repeat;
     background-position: -5px -5px
 }
 
 .menu {
     width: 440px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -193,7 +206,7 @@ body {
 
 .slider-controls {
     position: absolute;
-    bottom: 105px;
+    bottom: 95px;
     left: 50%;
     width: 200px;
     height: 18px;
@@ -207,7 +220,7 @@ body {
     display: inline-block;
     width: 8px;
     height: 8px;
-    margin: 0 17px;
+    margin: 0 8.5px;
     background: #fff;
     vertical-align: top;
     border: 5px solid #fff;
@@ -241,8 +254,8 @@ body {
 }
 
 .slide-text {
-    width: 560px;
-    padding: 30px 0;
+    width: 520px;
+    padding: 70px 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -253,22 +266,33 @@ body {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    color: #000
+    color: #000;
+    margin-bottom: 28px
 }
 
-.slide:nth-child(1),.slide:nth-child(2),.slide:nth-child(3) {
+.slide-text p {
+    width: 412px
+}
+
+.slide:nth-child(3) p {
+    width: 350px
+}
+
+.slide:nth-child(1) {
     background-image: url(../img/slider-bg.png);
     background-repeat: no-repeat;
-    background-position: 100% 10px
+    background-position: 430px 17px
 }
 
 .slide:nth-child(2),.slide:nth-child(3) {
-    background-image: url(../img/slider-bg-2.png)
+    background-image: url(../img/slider-bg-2.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%
 }
 
 .slide:nth-child(3) {
     background-image: url(../img/slider-bg-3.png);
-    background-position: 100% 0
+    background-position: 100% 19px
 }
 
 .features input[type=checkbox],.network input[type=radio],.slide {
@@ -293,7 +317,12 @@ body {
 }
 
 .advantage-item {
-    width: 300px
+    width: 300px;
+    margin-right: 100px
+}
+
+.advantage-item:last-child {
+    margin-right: 60px
 }
 
 .index-content,.index-content-left {
@@ -645,6 +674,7 @@ body {
 }
 
 .products {
+    width: 760px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1041,14 +1071,16 @@ body {
     text-align: center;
     color: #666;
     font-weight: 400;
-    width: 240px;
     margin-left: auto;
     margin-right: auto
 }
 
-.item-description {
-    max-height: 50px;
-    overflow: hidden
+.item-description-short {
+    width: 190px
+}
+
+.item-description-long {
+    width: 230px
 }
 
 .item .btn:active,.item:hover .hat {
@@ -1099,11 +1131,11 @@ body {
 }
 
 .sorting-filter {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 18px;
     color: #000;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     width: 360px
 }
 
