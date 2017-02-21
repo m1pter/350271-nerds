@@ -35,14 +35,16 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #000
+    color: #000;
+    margin-bottom: 0
 }
 
 .advantage-item p {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
-    width: 260px
+    width: 270px;
+    margin-bottom: 0
 }
 
 .contacts p {
@@ -50,7 +52,8 @@ body {
 }
 
 .contacts h2 {
-    font-size: 18px
+    font-size: 18px;
+    margin-bottom: 23px
 }
 
 .container {
@@ -60,30 +63,38 @@ body {
 }
 
 .main-header {
-    padding-top: 50px;
     background: #eee
 }
 
-.catalog-header,.main-header,.main-navigation {
+.catalog-header,.main-header {
+    padding-top: 50px;
+    color: #000;
     font-size: 16px;
-    line-height: 30px;
-    color: #000
+    line-height: 30px
 }
 
-.catalog-header {
-    padding-top: 50px
+.main-navigation,.main-navigation li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center
+}
+
+.main-navigation,.main-navigation ul {
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center
 }
 
 .main-navigation {
     font-family: "Roboto","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
     text-transform: uppercase;
     font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+    -ms-flex-pack: justify
 }
 
 .main-navigation a {
@@ -91,24 +102,20 @@ body {
     text-decoration: none
 }
 
-.main-navigation,.main-navigation li,.main-navigation ul {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
 .main-navigation ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    list-style: none
+    list-style: none;
+    align-items: center
 }
 
 .main-navigation li {
     height: 50px;
     padding-top: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px
 }
 
 .main-navigation a:hover {
@@ -127,19 +134,14 @@ body {
 .active-page::after {
     position: absolute;
     content: "";
-    width: 100%;
     height: 2px;
-    left: 0;
+    left: 10px;
+    right: 10px;
     bottom: 5px;
     background-color: #fb565a
 }
 
-.catalog-header .main-navigation {
-    margin-bottom: 88px
-}
-
 .index-logo {
-    margin-right: 200px;
     width: 160px;
     height: 65px;
     vertical-align: middle;
@@ -155,21 +157,26 @@ body {
 }
 
 .menu,.user-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
     display: flex
 }
 
 .user-block {
     position: relative;
-    margin-left: 200px;
+    width: 75px;
     margin-top: 15px;
     height: 50px;
-    padding-left: 80px;
+    padding-left: 85px;
+    font-weight: 700;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    width: 80px
+    align-items: center
 }
 
 .user-block::before {
@@ -186,16 +193,17 @@ body {
 }
 
 .menu {
-    width: 440px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+    max-width: 600px;
+    min-width: 490px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .slider {
     position: relative;
     width: 1160px;
-    height: 430px;
+    min-height: 430px;
     margin: 0 auto
 }
 
@@ -206,7 +214,7 @@ body {
 
 .slider-controls {
     position: absolute;
-    bottom: 95px;
+    bottom: 96px;
     left: 50%;
     width: 200px;
     height: 18px;
@@ -220,7 +228,7 @@ body {
     display: inline-block;
     width: 8px;
     height: 8px;
-    margin: 0 8.5px;
+    margin: 0 7px;
     background: #fff;
     vertical-align: top;
     border: 5px solid #fff;
@@ -245,21 +253,21 @@ body {
 }
 
 .slide {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden
+    min-height: 430px
 }
 
 .slide-text {
     width: 520px;
-    padding: 70px 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #283136
+    color: #283136;
+    min-height: 350px;
+    padding-bottom: 80px
 }
 
 .slide-title {
@@ -267,7 +275,8 @@ body {
     line-height: 55px;
     font-weight: 500;
     color: #000;
-    margin-bottom: 28px
+    margin-bottom: 28px;
+    padding-top: 76px
 }
 
 .slide-text p {
@@ -287,7 +296,7 @@ body {
 .slide:nth-child(2),.slide:nth-child(3) {
     background-image: url(../img/slider-bg-2.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%
+    background-position: 100% 0
 }
 
 .slide:nth-child(3) {
@@ -310,8 +319,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-bottom: 78px;
-    margin-bottom: 75px;
+    padding-bottom: 80px;
     margin-top: 80px;
     border-bottom: 2px solid #eee
 }
@@ -335,22 +343,23 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 60px
+    height: 465px;
+    padding-bottom: 60px
 }
 
 .index-content-left {
     width: 660px;
+    margin-top: 74px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
 }
 
 .index-content-left b {
-    width: 660px;
     font-family: "Roboto","Arial",sans-serif;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    margin-bottom: 30px
+    margin-bottom: 16px
 }
 
 .index-content-left p,.worklist li {
@@ -359,26 +368,32 @@ body {
     color: #283136
 }
 
-.table-accuracy th,.table-accuracy-title,.worklist p {
+.index-content-left p {
+    margin-bottom: 23px
+}
+
+.table-accuracy-title,.worklist-title {
+    font-size: 16px;
+    line-height: 24px;
     text-transform: uppercase;
-    font-weight: 700;
     color: #000
 }
 
-.worklist p {
-    margin-top: 42px;
-    line-height: 20px
+.worklist-title {
+    margin-bottom: 0;
+    font-weight: 700
 }
 
 .worklist ul {
-    margin: 0;
-    padding: 0;
-    list-style: none
+    list-style: none;
+    padding-left: 0
 }
 
 .worklist li {
     position: relative;
-    padding: 14px 0 14px 35px
+    padding-left: 35px;
+    padding-bottom: 16px;
+    padding-top: 8px
 }
 
 .worklist li::before {
@@ -386,25 +401,27 @@ body {
     position: absolute;
     width: 25px;
     height: 2px;
-    left: 0;
-    bottom: 25px;
+    left: 1px;
+    bottom: 26px;
     background-color: #fb565a
 }
 
 .table-accuracy-title {
-    font-size: 16px;
-    line-height: 24px;
     font-weight: 500;
     text-align: center;
-    margin-top: 35px
+    margin-top: 33px
 }
 
 .table-accuracy th {
     width: 33%;
     font-size: 45px;
-    line-height: 10px;
+    line-height: 10.06px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
     text-align: left;
-    padding-top: 40px
+    padding-top: 40px;
+    padding-left: 0
 }
 
 .table-accuracy sup {
@@ -412,41 +429,55 @@ body {
     font-size: 55%
 }
 
-.slogan p,.table-accuracy td {
-    font-size: 16px;
-    font-weight: 400
-}
-
 .table-accuracy td {
-    padding-top: 40px;
+    padding-top: 33px;
+    font-size: 16px;
     line-height: 18px;
-    color: #283136
+    font-weight: 400;
+    color: #283136;
+    padding-left: 0
 }
 
 .index-content-right {
     width: 360px
 }
 
-.main-footer,.partners {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+.color-logo {
+    margin-top: 40px
 }
 
 .partners {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: flex;
     margin-bottom: 80px;
-    height: 176px;
+    height: 180px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee
 }
 
+.partners img:nth-child(1) {
+    margin-left: 31px;
+    margin-right: 97px;
+    margin-top: 63px
+}
+
+.partners img:nth-child(2) {
+    align-self: center
+}
+
+.partners img:nth-child(3) {
+    align-self: center;
+    margin-left: 103px;
+    margin-right: 121px
+}
+
+.partners img:nth-child(4) {
+    margin-top: 52px
+}
+
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 70px
@@ -456,7 +487,7 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 415px;
+    min-height: 415px;
     text-align: center;
     background-color: #eee;
     background-image: url(../img/map.jpg);
@@ -465,14 +496,14 @@ body {
 }
 
 .contacts {
-    width: 220px;
-    height: 210px;
-    padding: 50px;
+    width: 219px;
+    height: 238px;
+    padding: 35px 50px;
     background-color: #fff;
     position: relative;
     left: 0;
     top: 54px;
-    margin-bottom: 178px
+    margin-bottom: 177px
 }
 
 .footer-bottom,.footer-social {
@@ -485,25 +516,34 @@ body {
 }
 
 .footer-social {
-    width: 264px
+    width: 260px
 }
 
 .slogan {
     width: 560px;
     margin-right: 200px;
-    margin-left: 140px
+    margin-left: 140px;
+    padding-top: 6px;
+    display: flex;
+    flex-wrap: wrap
 }
 
-.catalog-header h1,.slogan b {
+.slogan b {
+    width: 560px;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
-    color: #000
+    color: #000;
+    margin-bottom: 0
 }
 
 .slogan p {
+    width: 560px;
+    font-size: 16px;
     line-height: 22px;
-    color: #444
+    font-weight: 400;
+    color: #444;
+    margin-top: 11px
 }
 
 .catalog-header {
@@ -515,12 +555,14 @@ body {
 .catalog-header h1 {
     font-size: 55px;
     line-height: 55px;
-    padding-bottom: 117px;
-    text-align: center
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin-top: 78px
 }
 
 .catalog {
-    margin-top: 60px;
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -552,32 +594,32 @@ body {
 
 .filter-title {
     color: #000;
-    padding-bottom: 30px;
-    letter-spacing: .01em;
-    margin-left: -2px
+    letter-spacing: .05em;
+    margin-left: -1px
 }
 
 .sidebar-form fieldset {
     padding: 0;
     border: none;
-    margin-bottom: 50px
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap
 }
 
 .sidebar-form legend {
-    margin-bottom: 16px
+    margin-bottom: 5px
 }
 
 .features ul,.network ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
     padding: 0
 }
 
 .features li,.network li {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 2px;
-    list-style: none
+    padding-top: 10px;
+    list-style: none;
+    margin-bottom: 10px
 }
 
 .features label,.network label {
@@ -686,8 +728,8 @@ body {
 }
 
 .pagenation {
-    margin-bottom: 115px;
-    margin-top: 60px
+    margin-bottom: 60px;
+    margin-top: 21px
 }
 
 .pagenation a,.pagenation li,.pagenation ul {
@@ -719,11 +761,13 @@ body {
 }
 
 .pagenation li {
-    margin: 0 10px;
+    margin: 0 11px 0 0;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 18px;
     background: #eee;
     border-radius: 2px;
-    width: 50px;
     height: 50px;
     font-weight: 500
 }
@@ -735,11 +779,12 @@ body {
     height: inherit
 }
 
-.pagenation a:hover {
-    background: #dfdfdf
+.pagenation li:hover {
+    background: #dfdfdf;
+    cursor: pointer
 }
 
-.pagenation a:active {
+.pagenation li:active {
     color: #959595;
     background: #d5d5d5;
     box-shadow: inset 0 3px 0 #bfbfbf
@@ -753,9 +798,11 @@ body {
     background: #fff;
     border: 3px solid #dbdbdb;
     height: 44px;
-    width: 44px;
+    padding-left: 7px;
+    padding-right: 7px;
     box-shadow: none;
-    opacity: 1
+    opacity: 1;
+    cursor: default
 }
 
 .modal-content-close:hover::after,.modal-content-close:hover::before,.social-btn:active::after,a:active {
@@ -763,7 +810,7 @@ body {
 }
 
 .pagenation li:last-child {
-    width: 260px
+    width: 240px
 }
 
 .pagenation li:first-child {
@@ -772,10 +819,11 @@ body {
 
 .range-filter {
     width: 260px;
-    margin-bottom: 55px
+    margin-bottom: 54px
 }
 
 .range-controls {
+    margin-top: 48px;
     position: relative;
     height: 41px;
     padding-top: 39px;
@@ -824,7 +872,7 @@ body {
     display: flex
 }
 
-.price-controls label,.slide .btn {
+.price-controls label {
     font-size: 16px;
     text-transform: uppercase;
     width: 50%
@@ -837,9 +885,9 @@ body {
 .price-controls input {
     font-family: 'Roboto','Arial',sans-serif;
     font-size: 16px;
-    width: 60px;
+    width: 58px;
     margin-left: 10px;
-    padding: 12px 10px;
+    padding: 10px 11px;
     text-align: center;
     color: #283136;
     border: none;
@@ -859,16 +907,18 @@ body {
     opacity: .1
 }
 
-.slide .btn {
-    margin-top: 40px;
+.advantages .btn,.btn-form,.contacts .btn,.slide .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 240px;
-    height: 50px;
+    padding: 10px;
+    min-height: 30px;
+    text-align: center;
+    font-size: 16px;
     line-height: 18px;
     color: #fff;
     font-weight: 500;
+    text-transform: uppercase;
     text-decoration: none;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -876,45 +926,30 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: #fb565a;
     border-radius: 2px
 }
 
-.advantages .btn {
-    margin-top: 35px;
-    width: 160px;
-    color: #fff
+.slide .btn {
+    background: #fb565a;
+    margin-top: 38px;
+    width: 220px
 }
 
 .advantages .btn,.btn-form,.contacts .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 50px;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-decoration: none;
-    border-radius: 2px
+    margin-top: 33px;
+    width: 140px
 }
 
-.contacts .btn {
-    margin-top: 35px;
-    width: 220px;
-    color: #fff
+.btn-form,.contacts .btn {
+    margin-top: 38px;
+    width: 199px
 }
 
 .btn-form {
-    width: 260px;
+    width: 240px;
     color: #000;
-    background-color: #eee
+    background-color: #eee;
+    margin-top: 35px
 }
 
 .btn-red {
@@ -968,7 +1003,8 @@ body {
     color: rgba(255,255,255,.3)
 }
 
-.item .btn,.item-info p {
+.item .btn,.item-info h2,.item-info p {
+    text-align: center;
     font-size: 16px;
     line-height: 18px
 }
@@ -980,8 +1016,9 @@ body {
 }
 
 .item .btn {
-    margin: 30px 80px 42px;
-    height: 50px;
+    margin: 29px 80px 0;
+    padding: 10px;
+    min-height: 30px;
     text-transform: uppercase;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -992,7 +1029,7 @@ body {
     border-radius: 2px;
     color: #fff;
     font-weight: 500;
-    width: 200px
+    width: 180px
 }
 
 .footer-social a {
@@ -1040,13 +1077,15 @@ body {
 }
 
 .item-info {
-    height: 230px;
+    min-height: 188px;
+    max-height: 533px;
     width: 360px;
     display: none;
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #eee
+    background-color: #eee;
+    padding-bottom: 43px
 }
 
 .item:hover .item-info {
@@ -1058,8 +1097,7 @@ body {
 }
 
 .item-info h2 {
-    margin-top: 35px;
-    text-align: center;
+    margin-top: 27px;
     font-size: 18px;
     line-height: 30px;
     color: #000;
@@ -1068,15 +1106,17 @@ body {
 }
 
 .item-info p {
-    text-align: center;
     color: #666;
     font-weight: 400;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    max-height: 380px
 }
 
-.item-description-short {
-    width: 190px
+.item-description-long,.item-description-short {
+    width: 190px;
+    text-align: center;
+    overflow-y: auto
 }
 
 .item-description-long {
@@ -1100,13 +1140,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start
+    justify-content: flex-start;
+    margin-top: 13px
 }
 
 .sorting-title {
@@ -1166,7 +1207,7 @@ body {
 }
 
 .symbol-point {
-    width: 40px
+    width: 42px
 }
 
 .modal-content {
