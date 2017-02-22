@@ -110,7 +110,9 @@ body {
 .main-navigation ul{
   margin: 0 auto;
   padding: 0 0;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -123,7 +125,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
@@ -209,10 +213,13 @@ body {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 600px;
   min-width: 490px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
@@ -489,6 +496,8 @@ body {
 }
 
 .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 80px;
   height: 180px;
@@ -503,12 +512,16 @@ body {
 }
 
 .partners img:nth-child(2) {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 
 .partners img:nth-child(3) {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: 103px;
   margin-right: 121px;
 }
@@ -574,8 +587,11 @@ body {
   margin-right: 200px;
   margin-left: 140px;
   padding-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .slogan b {
@@ -653,11 +669,15 @@ body {
   padding: 0;
   border: none;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sidebar-form legend {
+  width: 260px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -849,10 +869,6 @@ body {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  min-width: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 50px;
   font-size:16px;
   line-height: 18px;
   font-weight: 500;
@@ -864,8 +880,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #eeeeee;
-  border-radius: 2px;
+
 }
 
   .pagenation a {
@@ -875,29 +890,37 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: bold;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: inherit;
+    height: inherit;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: inherit;
-    height: inherit;
+    background: #eeeeee;
+    border-radius: 2px;
+    height: 50px;
 }
 
-.pagenation li:hover {
+.pagenation a:hover {
   background: #dfdfdf;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 
-.pagenation li:active {
-  color: #959595;
+.pagenation a:active {
   background: #d5d5d5;
   box-shadow: inset 0 3px 0 #bfbfbf;
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
 }
 
 .pagenation .current,
@@ -910,6 +933,7 @@ body {
   background: white;
   border:3px solid #dbdbdb;
   height: 44px;
+  min-width: 30px;
   padding-left: 7px;
   padding-right: 7px;
   box-shadow: none;
@@ -917,15 +941,12 @@ body {
   cursor: default;
 }
 
-
-a:active{
-  opacity: 0.3;
-}
-
-
 .pagenation li:last-child {
-  width: 240px;
+  width: 260px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
+
 
 .pagenation li:first-child {
   margin-left: 0;
@@ -1030,8 +1051,7 @@ a:active{
     display:-ms-flexbox;
     display:flex;
     width:220px;
-    padding: 10px 10px;
-    min-height: 30px;
+    padding: 16px 10px;
     text-align: center;
     font-size:16px;
     line-height: 18px;
@@ -1055,8 +1075,7 @@ a:active{
   display:-ms-flexbox;
   display:flex;
   width:140px;
-  padding: 10px 10px;
-  min-height: 30px;
+  padding: 16px 10px;
   text-align: center;
   font-size:16px;
   line-height: 18px;
@@ -1079,8 +1098,7 @@ a:active{
   display:-ms-flexbox;
   display:flex;
   width:199px;
-  padding: 10px 10px;
-  min-height: 30px;
+  padding: 16px 10px;
   text-align: center;
   font-size:16px;
   line-height: 18px;
@@ -1102,8 +1120,7 @@ a:active{
   display:-ms-flexbox;
   display:flex;
   width:240px;
-  padding: 10px 10px;
-  min-height: 30px;
+  padding: 16px 10px;
   text-align: center;;
   font-size:16px;
   line-height: 18px;
@@ -1119,7 +1136,7 @@ a:active{
   text-decoration:none;
   border-radius:2px;
   background-color: #eeeeee;
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .btn-red {
@@ -1173,6 +1190,7 @@ a:active{
   box-shadow: inset 0 3px 0 #bfbfbf;
   color: rgba(255, 255, 255, 0.3);
 }
+
 
 .item .btn {
     color: #ffffff;
@@ -1297,8 +1315,7 @@ text-decoration:none;
   display:-ms-flexbox;
   display:flex;
   width:180px;
-  padding: 10px 10px;
-  min-height: 30px;
+  padding: 16px 10px;
   text-align: center;
   font-size:16px;
   line-height: 18px;
